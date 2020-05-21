@@ -3,22 +3,26 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: relative;
   }
 
-  h1 {
-      color: white;
-  }
 
   #canvas {
-    background: black;
+    background: rgb(13, 0, 133);
   }
 </style>
-<link rel="icon" href="https://pluspng.com/img-png/birthday-cake-png-birthday-cake-png-file-png-image-580.png">
+<link
+  rel="icon"
+  href="https://pluspng.com/img-png/birthday-cake-png-birthday-cake-png-file-png-image-580.png"
+/>
 
 <title>Happy Birthday!</title>
-<canvas id="canvas"></canvas>
 <body>
-    <h1>Click Here!</h1>
+    <canvas id="canvas"></canvas>
 </body>
 
 <script>
@@ -44,10 +48,6 @@
     hovered = false,
     colors = [
       "236, 252, 17",
-      "15, 245, 46",
-      "15, 237,  245",
-      "245, 15, 15",
-      "245, 15, 214",
     ],
     minDist = 30,
     bounceFactor = 5
@@ -99,9 +99,9 @@
   function drawText() {
     ctx.clearRect(0, 0, W, H)
     ctx.fillStyle = "#8800ff"
-    ctx.font = "100px 'Arial', sans-serif"
+    ctx.font = "100px 'Georgia', sans-serif"
     ctx.textAlign = "center"
-    ctx.fillText(keyword, W / 2, H / 2)
+    ctx.fillText(keyword, W/2, H/2)
   }
 
   // Clear the canvas
